@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <MSBuildAllProjects>$(MSBuildAllProjects);$(MSBuildThisFileFullPath)</MSBuildAllProjects>
+    <HasSharedItems>true</HasSharedItems>
+    <SharedGUID>{A4CB7494-2659-4D1D-88E5-FFC218354612}</SharedGUID>
+  </PropertyGroup>
+  <PropertyGroup Label="Configuration">
+    <Import_RootNamespace>ListViewSwitchCell</Import_RootNamespace>
+  </PropertyGroup>
+  <ItemGroup>
+    <Compile Include="$(MSBuildThisFileDirectory)Models\Animal.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ListViewPage.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)app.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)CustomSwitchCell.cs" />
+    <Compile Include="$(MSBuildThisFileDirectory)ViewModels\AnimalViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="$(MSBuildThisFileDirectory)Models\" />
+    <Folder Include="$(MSBuildThisFileDirectory)ViewModels\" />
+  </ItemGroup>
+</Project>
